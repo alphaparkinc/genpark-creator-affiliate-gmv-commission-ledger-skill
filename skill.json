@@ -1,0 +1,42 @@
+{
+  "name": "genpark-creator-affiliate-gmv-commission-ledger-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Creator affiliate GMV and commission ledger calculating multi-touch order conversions, return clawbacks, and net payouts.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "creator-monetization",
+  "tags": [
+    "creator-affiliate",
+    "gmv-tracking",
+    "commission-ledger",
+    "influencer-payouts",
+    "ltk-model"
+  ],
+  "inputs": {
+    "creator_id": {
+      "type": "string"
+    },
+    "attribution_period": {
+      "type": "string"
+    },
+    "base_commission_rate_pct": {
+      "type": "number"
+    }
+  },
+  "outputs": {
+    "payout_ledger_id": {
+      "type": "string"
+    },
+    "gross_merchandise_value_gmv_usd": {
+      "type": "number"
+    },
+    "net_disbursable_payout_usd": {
+      "type": "number"
+    },
+    "itemized_affiliate_statement_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
